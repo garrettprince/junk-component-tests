@@ -13,15 +13,21 @@ function CardTest({ title, description, category }) {
           !
         </div>
       </header>
-      <section id="description-text">
-        <p className="my-3 mx-4 leading-[1.35rem] font-regular">
-          This is some context for the thing that I want to build. There are
-          some things I want to add to the project.
-        </p>
-        {/* <p className="my-3 mx-4 leading-[1.35rem] font-regular">
-          Here&lsquo;s another thing. Just wanted to see what multiple
-          paragraphs looked like.
-        </p> */}
+      <section id="text-container" className="flex items-center my-3 mx-4">
+        <div id='description-text'>
+            <p className="leading-[1.35rem] font-regular">
+              This is some context for the thing that I want to build. There are
+              some things I want to add to the project.
+            </p>
+            {/* <p className="my-3 mx-4 leading-[1.35rem] font-regular">
+              Here&lsquo;s another thing. Just wanted to see what multiple
+              paragraphs looked like.
+            </p> */}
+        </div>
+        <div className="flex-col ml-3 mr-1 leading-4">
+          <h2 className="flex font-black text-green-500 justify-center">30</h2>
+          <h2 className="flex text-xs font-black text-green-500">MIN</h2>
+        </div>
       </section>
       <footer className="flex justify-between mx-4 mt-4 mb-1 content-center">
         <h2 className="font-black text-green-500">DESIGN</h2>

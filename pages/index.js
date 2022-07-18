@@ -1,7 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import CardTest from '../components/CardTest'
-import CardTest2 from '../components/CardTest2'
+import Head from "next/head";
+import Image from "next/image";
+import CardTest from "../components/CardTest";
+import CardTest2 from "../components/CardTest2";
+import CardTest3 from "../components/CardTest3";
+import { ChevronRightIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
 
 export default function Home() {
   return (
@@ -13,9 +15,16 @@ export default function Home() {
       </Head>
       <div className="flex justify-center mt-20">
         <section className="flex-col h-full bg-gray-300/30 rounded-[2rem]">
-          <h1 className='text-3xl font-semibold ml-7 mt-4'>In Progress</h1>
+          <div className="flex justify-between mx-7 mt-4">
+            <h1 className="text-3xl font-semibold">In Progress</h1>
+            <div className="flex items-center space-x-4">
+              <DotsHorizontalIcon className="h-8 w-8 cursor-pointer text-gray-500" />
+              <ChevronRightIcon className="h-10 w-10 cursor-pointer text-gray-500" />
+            </div>
+          </div>
           <CardTest />
           <CardTest2 />
+          <CardTest3 />
         </section>
       </div>
     </div>
