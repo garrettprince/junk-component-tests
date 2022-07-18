@@ -5,10 +5,10 @@ function CardTest({ title, description, category }) {
   return (
     <div
       id="card1"
-      className="bg-green-500/10 h-full w-96 border-green-500 rounded-3xl border-[6px] cursor-grab my-4 mx-5"
+      className="bg-green-500/10 h-full w-[22rem] border-green-500 rounded-3xl border-[6px] cursor-grab my-4 mx-5"
     >
       <header className="flex justify-between items-center mx-4 mt-3">
-        <h1 className="font-bold text-[1.70rem]">Do another thing</h1>
+        <h1 className="font-bold text-2xl">Do another thing</h1>
         <div className="border-[6px] bg-red-500/20 text-red-500 rounded-full border-red-500 text-sm font-black px-2 py-0">
           !
         </div>
