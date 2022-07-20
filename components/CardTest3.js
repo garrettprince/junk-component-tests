@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  DotsHorizontalIcon,
-} from "@heroicons/react/solid";
-import {
-  DotsCircleHorizontalIcon,
-} from "@heroicons/react/outline";
+import { DotsHorizontalIcon } from "@heroicons/react/solid";
+import { DotsCircleHorizontalIcon } from "@heroicons/react/outline";
 
 function CardTest({ title, description, category }) {
   return (
@@ -30,10 +26,14 @@ function CardTest({ title, description, category }) {
             Here&lsquo;s another thing. Just wanted to see what multiple
             paragraphs looked like.
           </p>
-          <p className="leading-[1.35rem] font-regular mt-3">
-            This is a third paragraph. The purpose of this one is to see what a
-            longer paragraph might look like.
-          </p>
+          <div className="mt-3">
+            <input type="checkbox" id="item" name="item" />
+            <label htmlFor="item"> Do this thing</label>
+          </div>
+          <div className="">
+            <input type="checkbox" id="item" name="item" />
+            <label htmlFor="item"> Get the other thing</label>
+          </div>
         </div>
         <div className="flex-col ml-3 mr-1 leading-4 cursor-pointer">
           <h2 className="flex font-black text-blue-500 justify-center">2</h2>

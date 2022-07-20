@@ -3,6 +3,7 @@ import Image from "next/image";
 import CardTest from "../components/CardTest";
 import CardTest2 from "../components/CardTest2";
 import CardTest3 from "../components/CardTest3";
+import CardComponentTest from "../components/CardComponentTest";
 import { ChevronRightIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
 
 export default function Home() {
@@ -23,10 +24,16 @@ export default function Home() {
             </div>
           </div>
           <CardTest />
+          <CardComponentTest
+            title="This is a test to see something"
+            description="This is also another test to see what it would look like to use props instead of everything being static. Though I do not know how to do line breaks which I will need to find out."
+            category={"Dev".toUpperCase()}
+            dueDate={"DUE 7/20".toUpperCase()}
+            minutesDuration="45"
+          />
           <CardTest2 />
           <CardTest3 />
         </section>
-        
       </div>
     </div>
   );
