@@ -5,6 +5,7 @@ import CardTest2 from "../components/CardTest2";
 import CardTest3 from "../components/CardTest3";
 import CardComponentTest from "../components/CardComponentTest";
 import { ChevronRightIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
+import FormTest from "../components/FormTest";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex justify-center mt-20">
+        <FormTest />
         <section className="flex-col h-full bg-gray-300/40 rounded-[2rem] mx-4">
           <div className="flex justify-between mx-7 mt-4">
             <h1 className="text-3xl font-semibold">In Progress</h1>
