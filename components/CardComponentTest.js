@@ -1,21 +1,20 @@
 import React from "react";
 import { DotsHorizontalIcon } from "@heroicons/react/solid";
 
-function CardTest({ title, description, category, dueDate, minutesDuration }) {
-  let isUrgent = false;
+function CardTest({ title, description, category, dueDate, minutesDuration, urgent }) {;
 
   return (
     <div
       id="card1"
-      className="bg-green-500/10 h-full w-[22rem] border-green-500 rounded-3xl border-[6px] cursor-grab my-4 mx-5"
+      className="bg-green-500/10 h-max w-[22rem] border-green-500 rounded-3xl border-[6px] cursor-grab my-4 mx-5"
     >
       <header className="flex justify-between items-center mx-4 mt-3">
         <h1 className="font-bold text-2xl">{title}</h1>
-        <div className="border-[6px] bg-red-500/20 text-red-500 rounded-full border-red-500 text-sm font-black px-2 py-0">
+        {urgent && (<div className="border-[6px] bg-red-500/20 text-red-500 rounded-full border-red-500 text-sm font-black px-2 py-0">
           !
-        </div>
+        </div>)}
       </header>
-      <section id="text-container" className="flex items-center my-3 mx-4">
+      <section id="text-container" className="flex items-center my-3 mx-4 justify-between">
         <div id="description-text">
           <p className="leading-[1.35rem] font-regular">{description}</p>
         </div>
